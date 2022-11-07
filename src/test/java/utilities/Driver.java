@@ -8,7 +8,10 @@ import java.time.Duration;
 
 public class Driver {
 
-
+    private Driver(){
+        // Singleton pattern konsepti ile
+        // Driver class'indan obje olusturmayi engellemek icin bu cons'i olusturduk
+    }
 
     static WebDriver driver;
 
@@ -54,6 +57,7 @@ public class Driver {
 
         return driver;
     }
+
 
     public static void closeDriver(){
 

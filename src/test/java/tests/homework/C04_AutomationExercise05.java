@@ -9,7 +9,7 @@ import utilities.ReusableMethods;
 public class C04_AutomationExercise05 {
 
     @Test
-    public void AutomationExercise05(){
+    public void AutomationExercise05(){ // also go to Pages and see the AutomationExercise04Page
 
         // 1. Launch browser
         // 2. Navigate to url 'http://automationexercise.com'

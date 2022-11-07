@@ -8,6 +8,7 @@ import utilities.Driver;
 public class AutomationExercise04Page {
 
     public AutomationExercise04Page (){
+
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
@@ -47,4 +48,28 @@ public class AutomationExercise04Page {
 
     @FindBy (xpath = "//p[text()='Email Address already exist!']")
     public WebElement emailAdreadyExist;
+
+    // Followings are for AutomationExercise06
+    @FindBy (xpath = "//a[@href='/contact_us']")
+    public WebElement contactUs;
+
+    @FindBy (xpath = "(//h2[@class='title text-center'])[2]")
+    public WebElement getInTouch;
+
+    @FindBy (xpath = "//input[@name='name']")
+    public WebElement getInTouchName;
+
+    @FindBy (xpath = "//input[@data-qa='email']")
+    public WebElement getInTouchEmail;
+
+    @FindBy (xpath = "//input[@data-qa='subject']")
+    public WebElement subject;
+
+    @FindBy (id= "message")
+    public WebElement message;
+
+    @FindBy (xpath = "//input[@type='file']")
+    public WebElement chooseFileButton;
+
+
 }
