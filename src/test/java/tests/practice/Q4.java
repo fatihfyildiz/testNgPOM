@@ -78,6 +78,7 @@ public class Q4 extends TestBase {
             // System.out.println(priceStr); ==> all prices come with $ signs thus we need to replace all of those $ signs
 
             String priceStr= each.getText().replaceAll("^\\D","");
+
             System.out.println(priceStr); //
 
             pricesDouble.add(Double.parseDouble(priceStr));
