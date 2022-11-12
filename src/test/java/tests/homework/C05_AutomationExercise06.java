@@ -29,7 +29,7 @@ public class C05_AutomationExercise06 {
 
         // 4. Click on 'Contact Us' button
         AutomationExercise04Page automationExercisePage= new AutomationExercise04Page();
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
 
         automationExercisePage.contactUs.click();
 
@@ -47,7 +47,7 @@ public class C05_AutomationExercise06 {
         automationExercisePage.subject.sendKeys("Hej!");
         automationExercisePage.message.sendKeys("Hur mår du?");
 
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
 
         // 7. Upload file
         automationExercisePage.chooseFileButton.click();
@@ -66,7 +66,7 @@ public class C05_AutomationExercise06 {
 
         softAssert.assertAll();
 
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
 
         Driver.closeDriver();
 

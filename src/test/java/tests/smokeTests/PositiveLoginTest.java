@@ -26,7 +26,7 @@ public class PositiveLoginTest {
         myCoursedemyPage.passwordBox.sendKeys(ConfigReader.getProperty("myValidPassword"));
 
         myCoursedemyPage.cookies.click();
-        ReusableMethods.bekle(2);
+        ReusableMethods.waitFor(2);
 
         // Login butonuna basarak login olun
         myCoursedemyPage.loginButton.click();
@@ -34,7 +34,7 @@ public class PositiveLoginTest {
         // Basarili olarak giris yapilabildigini test edin
         Assert.assertTrue(myCoursedemyPage.myCoursesLink.isDisplayed());
 
-        ReusableMethods.bekle(3);
+        ReusableMethods.waitFor(3);
         // Driver.closeDriver();
     }
 

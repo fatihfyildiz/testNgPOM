@@ -45,7 +45,7 @@ public class NegativeLoginTest {
         // bunun icin hala login linkinin gorunur oldugunu test edin
         Assert.assertTrue(myCoursedemyPage.loginLink.isEnabled());
 
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
     }
 
     @Test
@@ -75,9 +75,9 @@ public class NegativeLoginTest {
         myCoursedemyPage.emailBox.sendKeys(ConfigReader.getProperty("myInvalidEmail"));
         myCoursedemyPage.passwordBox.sendKeys(ConfigReader.getProperty("myInvalidPassword"));
 
-        ReusableMethods.bekle(2);
+        ReusableMethods.waitFor(2);
         myCoursedemyPage.cookies.click();
-        ReusableMethods.bekle(2);
+        ReusableMethods.waitFor(2);
 
         // Login butonuna basarak login olmaya calisin
         myCoursedemyPage.loginButton.click();
@@ -90,7 +90,7 @@ public class NegativeLoginTest {
 
     @AfterClass
     public void teardown(){
-        ReusableMethods.bekle(3);
+        ReusableMethods.waitFor(3);
         Driver.closeDriver();
     }
 }

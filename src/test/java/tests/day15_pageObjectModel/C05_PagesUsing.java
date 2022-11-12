@@ -30,6 +30,6 @@ public class C05_PagesUsing {
         // 4- Basarili giris yapilamadigini test edin
         Assert.assertTrue(facebookPage.facebookPasswordConfirm.isDisplayed());
 
-        ReusableMethods.bekle(3);
+        ReusableMethods.waitFor(3);
     }
 }

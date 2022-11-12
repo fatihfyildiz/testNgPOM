@@ -34,7 +34,7 @@ public class C06_AutomationExercise2 {
         // 4. Click on 'Signup / Login' button
         AutomationExercisePage automationExercisePage= new AutomationExercisePage();
         automationExercisePage.signUpLink.click();
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
 
         // 5. Verify 'Login to your account' is visible
 
@@ -57,7 +57,7 @@ public class C06_AutomationExercise2 {
         softAssert.assertTrue(automationExercisePage.accountDeleted.isDisplayed());
 
         softAssert.assertAll();
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
         Driver.closeDriver();
     }
 }

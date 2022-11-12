@@ -72,9 +72,9 @@ public class MyCoursedemyPage {
         loginLink.click();
         emailBox.sendKeys(ConfigReader.getProperty("myValidEmail"));
         passwordBox.sendKeys(ConfigReader.getProperty("myValidPassword"));
-        ReusableMethods.bekle(2);
+        ReusableMethods.waitFor(2);
         cookies.click();
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
         loginButton.click();
     }
 }

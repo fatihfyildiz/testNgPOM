@@ -25,7 +25,7 @@ public class C04_PagesKullanimi {
         String expectedWord= "Nutella";
         Assert.assertTrue(actualResult.contains(expectedWord));
 
-        ReusableMethods.bekle(3);
+        ReusableMethods.waitFor(3);
         Driver.closeDriver(); // due to the alphabetic order, nutellaTest works at the end, thus we close driver here
     }
 

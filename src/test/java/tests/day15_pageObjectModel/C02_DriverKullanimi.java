@@ -49,7 +49,7 @@ public class C02_DriverKullanimi {
 
         softAssert.assertAll(); // if we introduce SoftAssert object, we must write this at the end
 
-        ReusableMethods.bekle(5);
+        ReusableMethods.waitFor(5);
         Driver.closeDriver();
     }
 

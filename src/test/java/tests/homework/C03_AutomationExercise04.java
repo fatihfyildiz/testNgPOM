@@ -27,7 +27,7 @@ public class C03_AutomationExercise04 {
         // 4. Click on 'Signup / Login' button
         AutomationExercise04Page automationExercisePage=new AutomationExercise04Page();
 
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
 
         automationExercisePage.signUpLinki.click();
 
@@ -55,7 +55,7 @@ public class C03_AutomationExercise04 {
 
         softAssert.assertAll();
 
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
 
         Driver.closeDriver();
     }

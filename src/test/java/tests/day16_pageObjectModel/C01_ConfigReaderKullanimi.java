@@ -27,7 +27,7 @@ public class C01_ConfigReaderKullanimi {
 
         Assert.assertTrue(actualSearchResult.contains(expectedWord));
 
-        ReusableMethods.bekle(3);
+        ReusableMethods.waitFor(3);
         Driver.closeDriver();
     }
 

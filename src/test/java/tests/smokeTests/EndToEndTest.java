@@ -60,7 +60,7 @@ public class EndToEndTest {
         myCoursedemyPage.ilkNextButton.click();
 
         // price kutusun fiyati yazdiralim
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitFor(1);
 
         myCoursedemyPage.coursePrice.sendKeys(ConfigReader.getProperty("myCoursePrice"));
 
