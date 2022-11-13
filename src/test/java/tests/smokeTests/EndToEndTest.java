@@ -50,7 +50,7 @@ public class EndToEndTest {
         // category menusunu tiklayiniz
         myCoursedemyPage.categoryMenu.click();
 
-        // ilgili kurst kategorisini seciniz
+        // ilgili kurs kategorisini seciniz
         myCoursedemyPage.categoryChoosing.click();
 
         // next butonuna basalim

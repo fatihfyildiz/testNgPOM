@@ -74,6 +74,7 @@ public class C04_SmokeTestRaporlu extends TestBaseRapor {
         ReusableMethods.waitFor(3);
 
         // login linkine basin
+        MyCoursedemyPage myCoursedemyPage= new MyCoursedemyPage();
         myCoursedemyPage.loginLink.click();
 
         extentTest= extentReports.createTest("yanlis password","yanlis passsword ile giris yapilamadi");
@@ -110,6 +111,7 @@ public class C04_SmokeTestRaporlu extends TestBaseRapor {
         ReusableMethods.waitFor(3);
 
         // login linkine basin
+        MyCoursedemyPage myCoursedemyPage= new MyCoursedemyPage();
         myCoursedemyPage.loginLink.click();
 
         extentTest= extentReports.createTest("yanlis password ve yanlis kullanici adi","yanlis passsword ve kullanici adi ile giris yapilamadi");
