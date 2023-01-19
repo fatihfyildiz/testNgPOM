@@ -59,7 +59,7 @@ public class EndToEndTest {
         // tekrar nextbutonuna basalim
         myCoursedemyPage.ilkNextButton.click();
 
-        // price kutusun fiyati yazdiralim
+        // price kutusuna fiyati yazdiralim
         ReusableMethods.waitFor(1);
 
         myCoursedemyPage.coursePrice.sendKeys(ConfigReader.getProperty("myCoursePrice"));
@@ -79,7 +79,7 @@ public class EndToEndTest {
         // tekrar nextbutonuna basalim
         myCoursedemyPage.ilkNextButton.click();
 
-        // submut ediniz
+        // submit ediniz
         myCoursedemyPage.submitButton.click();
 
         // yeni kursun olusturuldugunu test edin

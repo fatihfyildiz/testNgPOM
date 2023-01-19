@@ -23,7 +23,6 @@ public class C01_AmazonSearchTest extends TestBaseCross {
                 driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']")).getText();
 
         String expectedKelime= "Nutella";
-
         Assert.assertTrue(actualSonucYazisi.contains(expectedKelime));
 
         ReusableMethods.waitFor(5);
