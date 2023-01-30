@@ -31,6 +31,7 @@ public class C01_DataProvider {
 
         // Arama sonuclarinin aranan kelimyi icerdigini test edin
         String actualResultWriting= amazonPage.searchResultElement.getText();
+
         ReusableMethods.waitFor(3);
         Assert.assertTrue(actualResultWriting.contains(aranacakKelime));
 
