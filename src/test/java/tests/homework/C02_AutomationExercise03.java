@@ -38,6 +38,7 @@ public class C02_AutomationExercise03 {
 
         //6. Enter correct email address and password
         automationExercisePage.emailKutusu.sendKeys("aurora1@gmail.com");
+
         automationExercisePage.passwordKutusu.sendKeys("123456");
 
         //7. Click 'login' button
