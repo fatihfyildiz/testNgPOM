@@ -68,6 +68,7 @@ public class C01_DependsOnMethods extends TestBaseClass {
         int indexResults= actualText.indexOf("results");
 
         String resultsNumberStr= actualText.substring(indexOf+3,indexResults-1);
+
         Integer resultsNumberInt= Integer.parseInt(resultsNumberStr);
         Integer expectedMinResults= 100;
 
