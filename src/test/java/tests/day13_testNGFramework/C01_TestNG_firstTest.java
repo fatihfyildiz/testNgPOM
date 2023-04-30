@@ -31,6 +31,7 @@ public class C01_TestNG_firstTest extends TestBase {
     }
 
     @Test (priority = 12)
+
     public void thirdTest(){
 
         driver.get("https://www.wisequarter.com");
